@@ -1,4 +1,23 @@
 /*********************************************
+ * Variables
+ *********************************************/
+
+:root {
+  --primary-color: #7a1d90;
+  --secondary-color: #9e51ae;
+  --tertiary-color: #b370be;
+  --quaternary-color:  #ff8e71;
+  --quinary-color:  #9f5f80;
+
+  --block-code-bg-color:  #343131;
+  --block-code-text-color:  #CCCCCC;
+  
+  --primary-text-color: black;
+  --main-slide-text-color: black;
+}
+
+
+/*********************************************
  * General settings
  *********************************************/
 body {
@@ -12,7 +31,7 @@ body {
  *********************************************/
 
 h1 {
-  color: #1f416d;
+  color: var(--primary-color);
   }
 
 
@@ -21,7 +40,8 @@ h1 {
  *********************************************/
 
 #table-of-contents h2 {
-  color: #ef7b26;
+  Background-color: var(--primary-color);
+  color: white;
   }
 
 /*********************************************
@@ -29,21 +49,21 @@ h1 {
  *********************************************/
 
 h2 {
-    color: #ef7b26;
+    color: var(--primary-color);
     font-size: 120%;
 }
 
 h3 {
-    color: #1f416d;
-    font-size: 110%;
-    font-weight: normal;
+  color: var(--quinary-color);
+  font-size: 110%;
+  font-weight: normal;
 }
 
 
 h4 {
-    color: #4c000a;
-    font-size: 100%;
-    font-weight: normal;
+  color: var(--tertiary-color);
+  font-size: 100%;
+  font-weight: normal;
 }
 
 /*********************************************
@@ -57,9 +77,9 @@ dl {
   margin: 0;
 }
 dt {
-    color: #1f416d;
+  color: var(--quaternary-color);
     /* adjust the width; make sure the total of both is 100% */
-    padding: 0;
+  padding: 0;
   display: block;
 }
 dd {
@@ -78,12 +98,12 @@ table {
 }
 
 th {
-    background-color: #1f416d;
-    color: #c9d4e6;
+  background-color: var(--secondary-color);
+  color: #c9d4e6;
 }
 
 td {
-    background-color: #c9d4e6;
+  background-color: #c9d4e6;
 }
 
 th, td {
@@ -100,16 +120,17 @@ th.org-left {
  * LINKS
  *********************************************/
 a {
-  color: #bf8740;
+  color: var(--tertiary-color);
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease; }
 
 a:hover {
-  color:#a10010;
+  color: var(--quinary-color);
   text-shadow: none;
   border: none; }
+
 
 
 /*********************************************
@@ -130,17 +151,19 @@ a:hover {
 }
 
 /*********************************************
+ * Inline code
+ *********************************************/
+
+code {
+  font-size: 100%;
+}
+
+
+/*********************************************
  * Org-src block
  *********************************************/
 
-.org-src-container {
-    color: Wheat;
-    background-color: DarkSlateGray;
-}
-
-pre {
-    border: 0px;
-    font-size: 10pt;
-    box-shadow: 0px;
-    margin: 0em;
-}
+.codeblock, pre.src, #content .literal-block{
+    color: var(--block-code-text-color);
+    background: var(--block-code-bg-color);
+}                              
