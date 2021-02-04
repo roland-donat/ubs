@@ -578,30 +578,44 @@ section .MathJax {
   margin-bottom: 5px;
 
   border-collapse:collapse;
-  text-align:center;
+  text-align: left;
 }
 
-.reveal table thead
+.reveal table th
 {
 border-collapse:collapse;
-text-align:center;
 color: #ffffff;
 background-color: var(--quinary-color);
 border: 1px solid black;
 }
 
-.reveal table th
+.reveal table .col_heading
 {
-  border: 1px solid black;
-  max-width:100%;
-  white-space:nowrap;
-  font-weight: normal;
+border-collapse:collapse;
+text-align: left;
+color: #ffffff;
+background-color: var(--quinary-color);
+border: 1px solid black;
 }
 
-.reveal table td.org-right
+.reveal table .index_name
 {
-  text-align: center;
+border-collapse:collapse;
+text-align: left;
+color: #ffffff;
+background-color: var(--quinary-color);
+border: 1px solid black;
 }
+
+.reveal table .row_heading
+{
+border-collapse:collapse;
+text-align: left;
+color: var(--quinary-color);
+background-color: white;
+border: 1px solid black;
+}
+
 
 .reveal table tr
 {
