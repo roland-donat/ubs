@@ -115,6 +115,9 @@ th.org-left {
     text-align: left;
 }
 
+span[class^="section-number-"]:after {
+    content: '.';
+}
 
 /*********************************************
  * LINKS
