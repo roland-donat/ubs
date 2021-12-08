@@ -99,7 +99,7 @@ table {
 
 th {
   background-color: var(--secondary-color);
-  color: #c9d4e6;
+  color: var(--primary-color);
 }
 
 td {
