@@ -7,13 +7,16 @@
   --secondary-color: #4cd900;
   --tertiary-color: #7ff219;
   --quaternary-color:  #ff8e71;
-  --quinary-color:  #b2ff14;
+  --quinary-color:  #007bff;
 
-  --block-default-color:  #4cd900;
-  --block-definition-color: #4cd900;
+  --block-default-color:  #12c200;
+  --block-definition-color: #12c200;
   --block-example-color: #ff8e71;
   --block-alert-color:  #a10010;
-  
+
+  --block-code-bg-color:  #343131;
+  --block-code-text-color:  #CCCCCC;
+
   --primary-text-color: black;
   --main-slide-text-color: black;
 }
